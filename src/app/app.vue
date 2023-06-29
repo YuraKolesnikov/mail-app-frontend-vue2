@@ -1,30 +1,39 @@
 <template>
-  <div>
+	<div>
 		<div :class="containerClassList">
-			<button @click="setTheme('brown')">Brown</button>
-			<button @click="setTheme('green')">Green</button>
-			<button @click="setTheme('violet')">Violet</button>
+			<v-button block @click="setTheme('brown')">Brown</v-button>
+			<v-button :button-style="BUTTON_STYLES.WHITE" @click="setTheme('green')">Green</v-button>
+			<v-button @click="setTheme('violet')">Violet</v-button>
+			<v-button :button-style="BUTTON_STYLES.BLACK_OUTLINED">Outlined</v-button>
+			<v-button :button-style="BUTTON_STYLES.ACCENT">Accent</v-button>
 		</div>
 	</div>
 </template>
 
 <script>
+import { BUTTON_ICON_POSITIONS, BUTTON_STYLES, VButton } from 'shared/ui'
+
 export default {
-	data() {
+	components: {
+		VButton,
+	},
+	data () {
 		return {
-			theme: 'brown'
+			theme: 'brown',
+			BUTTON_STYLES,
+			BUTTON_ICON_POSITIONS,
 		}
 	},
 	methods: {
-		setTheme(theme) {
+		setTheme (theme) {
 			this.theme = theme
-		}
+		},
 	},
 	computed: {
-		containerClassList() {
+		containerClassList () {
 			return `container ${this.theme} flex`
-		}
-	}
+		},
+	},
 }
 </script>
 
