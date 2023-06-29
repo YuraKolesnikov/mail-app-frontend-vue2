@@ -4,3 +4,21 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.brown {
+  --accent: #EAD7C0;
+  --accent-dark: #5E564D;
+  --accent-light: #F7EfE6;
+}
+
+.green {
+  --accent: #00FFCB;
+  --accent-dark: #006651;
+  --accent-light: #94FFA2;
+}
+
+.violet {
+  --accent: #E3A7FF;
+  --accent-dark: #5B4355;
+  --accent-light: #C2BFFB;
+}

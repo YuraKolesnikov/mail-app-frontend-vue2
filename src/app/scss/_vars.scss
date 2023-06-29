@@ -1,3 +1,12 @@
 :root {
+  --blue: #4AC0E0;
+  --pink: #FF3366;
+  --violet: #8245E6;
+  --grey-1: #999999; /* Email name in card */
+  --grey-2: #808080; /* Email short content in card */
+  --grey-3: #E6E6E6; /* Meeting location border bottom */
+  --grey-4: #F2F2F2;
+  --grey-5: #666666; /* Sidebar inactive color */
 
+  --gradient: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
 }
