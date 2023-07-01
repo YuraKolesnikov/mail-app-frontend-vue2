@@ -6,27 +6,40 @@
 			<v-button @click="setTheme('violet')">Violet</v-button>
 			<v-button :button-style="BUTTON_STYLES.BLACK_OUTLINED">Outlined</v-button>
 			<v-button :button-style="BUTTON_STYLES.ACCENT">Accent</v-button>
+			<v-input id="name" name="name" placeholder="Full name" type="text" @input="handleInput"/>
 		</div>
 	</div>
 </template>
 
 <script>
-import { BUTTON_ICON_POSITIONS, BUTTON_STYLES, VButton } from 'shared/ui'
+import { BUTTON_ICON_POSITIONS, BUTTON_STYLES, INPUT_TYPES, INPUTS, VButton, VInput } from 'shared/ui'
 
 export default {
 	components: {
 		VButton,
+		VInput,
 	},
 	data () {
 		return {
 			theme: 'brown',
 			BUTTON_STYLES,
 			BUTTON_ICON_POSITIONS,
+			INPUT_TYPES,
+			INPUTS,
 		}
 	},
 	methods: {
 		setTheme (theme) {
 			this.theme = theme
+		},
+		handleInput (v) {
+			console.log(`LOLKEK: ${v}`)
+		},
+		handleBlur () {
+			console.log('BLUR')
+		},
+		handleFocus () {
+			console.log('FOCUS')
 		},
 	},
 	computed: {

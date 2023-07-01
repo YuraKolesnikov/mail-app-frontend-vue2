@@ -1,0 +1,36 @@
+.v-input {
+  --border-color: var(--grey-1);
+  border: 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: transparent;
+  font-size: 14px;
+  padding: 17px 5px;
+  transition: opacity .2s ease-in-out, border-color .2s ease-in-out;
+
+  &::placeholder {
+    color: var(--border-color);
+    user-select: none;
+    transition: color .2s ease-in-out;
+  }
+
+  &:disabled,
+  &.v-input--disabled {
+    opacity: .4;
+    pointer-events: none;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    --border-color: var(--black);
+    outline: 0;
+  }
+
+  &.v-input--error {
+    --border-color: var(--red);
+  }
+}
+
+.v-input__icon {
+  margin-right: 21px;
+}
