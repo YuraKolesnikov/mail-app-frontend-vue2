@@ -1,0 +1,11 @@
+export const LIST_ICON_COLORS = {
+	BLUE: 'blue',
+	PINK: 'pink',
+	VIOLET: 'violet',
+}
+
+LIST_ICON_COLORS.LIST = [
+	LIST_ICON_COLORS.BLUE,
+	LIST_ICON_COLORS.PINK,
+	LIST_ICON_COLORS.VIOLET,
+]
