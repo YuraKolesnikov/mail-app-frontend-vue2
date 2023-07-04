@@ -7,17 +7,28 @@
 			<v-button :button-style="BUTTON_STYLES.BLACK_OUTLINED">Outlined</v-button>
 			<v-button :button-style="BUTTON_STYLES.ACCENT">Accent</v-button>
 			<v-input id="name" name="name" placeholder="Full name" type="text" @input="handleInput"/>
+			<v-list-icon :color="LIST_ICON_COLORS.LIGHT_BLUE"/>
 		</div>
 	</div>
 </template>
 
 <script>
-import { BUTTON_ICON_POSITIONS, BUTTON_STYLES, INPUT_TYPES, INPUTS, VButton, VInput } from 'shared/ui'
+import {
+	BUTTON_ICON_POSITIONS,
+	BUTTON_STYLES,
+	INPUT_TYPES,
+	INPUTS,
+	LIST_ICON_COLORS,
+	VButton,
+	VInput,
+	VListIcon,
+} from 'shared/ui'
 
 export default {
 	components: {
 		VButton,
 		VInput,
+		VListIcon,
 	},
 	data () {
 		return {
@@ -26,6 +37,7 @@ export default {
 			BUTTON_ICON_POSITIONS,
 			INPUT_TYPES,
 			INPUTS,
+			LIST_ICON_COLORS,
 		}
 	},
 	methods: {

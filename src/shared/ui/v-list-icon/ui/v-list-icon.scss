@@ -1,0 +1,33 @@
+.v-list-icon {
+  --border-color: var(--white);
+
+  border: 2px solid var(--border-color);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.v-list-icon--light-blue {
+  --border-color: var(--light-blue);
+}
+
+.v-list-icon--blue {
+  --border-color: var(--blue);
+}
+
+.v-list-icon--pink {
+  --border-color: var(--pink);
+}
+
+.v-list-icon--green {
+  --border-color: var(--green);
+}
+
+.v-list-icon--yellow {
+  --border-color: var(--yellow);
+}
+
+.v-list-icon--orange {
+  --border-color: var(--orange);
+}
